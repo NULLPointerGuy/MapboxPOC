@@ -48,10 +48,10 @@ public class MainActivity extends Activity implements MapboxMap.OnMyLocationChan
     private MarkerOptions user_postion;
 
     /**
-     * Google PLaces API variable
+     * Google PLaces PLACES_API variable
      */
     private String url = "https://maps.googleapis.com/maps/api/place/search/json?radius=500&sensor=false&key=";
-    private String API = BuildConfig.API_KEY;
+    private String PLACES_API = BuildConfig.API_KEY;
     private String PLACE_QUERY = "&types=pharmacy";
 
     @Override
@@ -93,14 +93,14 @@ public class MainActivity extends Activity implements MapboxMap.OnMyLocationChan
 
     private void getShopsLocation(LatLng latLng){
         OkHttpClient client = new OkHttpClient();
-        HttpUrl.Builder urlBuilder = HttpUrl.parse(url+API+"&location="+latLng.getLatitude()+ "," +latLng.getLongitude()+PLACE_QUERY).newBuilder();
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(url+ PLACES_API +"&location="+latLng.getLatitude()+ "," +latLng.getLongitude()+PLACE_QUERY).newBuilder();
         Request request = new Request.Builder()
                 .url(urlBuilder.build().toString())
                 .build();
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                Log.d("TAG","API ERROR");
+                Log.d("TAG","PLACES_API ERROR");
             }
 
             @Override
