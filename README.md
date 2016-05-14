@@ -5,7 +5,7 @@ For more information visit the [mapbox](https://www.mapbox.com/) and [google pla
 **Map Animations are easy using mapbox,also you can customize the map such as blue for water regions and green for parks etc.**<br/><br/>
 ![alt tag](https://github.com/NULLPointerGuy/MapboxPOC/blob/master/Gifs/screen-1.gif)<br/>
 
-**Also you can set your own custom marker,marker title, and more description about the marker.**In this example i have used customized plus sign markers to denote medical shops.<br/><br/>
+**Also you can set your own custom marker,marker title, and more description about the marker.In this example i have used customized plus sign markers to denote medical shops.**<br/><br/>
 ![alt tag](https://github.com/NULLPointerGuy/MapboxPOC/blob/master/Gifs/screen-2.gif)<br/>
 
 **Please note:**<br/>
