@@ -9,4 +9,4 @@ For more information visit the [mapbox](https://www.mapbox.com/) and [google pla
 ![alt tag](https://github.com/NULLPointerGuy/MapboxPOC/blob/master/Gifs/screen-2.gif)<br/>
 
 **Please note:**<br/>
-Once you have downloaded the project, make sure u have the mapbox sdk key and a google places api key(Browser key) added in your gradle.properties or you can replace BuildConfig.API_KEY with your own API keys.
+Once you have downloaded the project, make sure u have the mapbox sdk key and a google places api key added in your gradle.properties or you can replace BuildConfig.API_KEY with your own API keys.
